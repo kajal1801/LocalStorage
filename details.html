@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+</head>
+<body>
+    <div class="container">
+        <div class="result">
+            <div class="firstname"></div>
+            <div class="lastname"></div>
+            <div class="email"></div>
+            <div class="address"></div>
+            <div class="phonenum"></div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("firstname").innerHTML = localStorage.getItem("firstname");
+        document.getElementById("lastname").innerHTML = localStorage.getItem("lastname");
+        document.getElementById("email").innerHTML = localStorage.getItem("email");
+        document.getElementById("address").innerHTML = localStorage.getItem("address");
+        document.getElementById("phonenum").innerHTML = localStorage.getItem("phonenum");
+    </script>
+</body>
+</html>
