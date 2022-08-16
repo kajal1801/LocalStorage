@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in JS</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Form that stores data in Local Storage</h1>
+        </div>
+        <div class="forms">
+            <form action="">
+                <div class="formele">
+                    <label for="firstname">Enter First Name: </label>
+                    <input type="text" name="firstname" id="firstname">
+                </div>
+                <br>
+                <div class="formele">
+                    <label for="lastname">Enter Last Name: </label>
+                    <input type="text" name="lastname" id="lastname">
+                </div>
+                <br>
+                <div class="formele">
+                    <label for="address">Enter Address: </label>
+                    <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                </div>
+                <br>
+                <div class="formele">
+                    <label for="phonenum">Enter Phone Number: </label>
+                <input type="number" name="phonenum" id="phonenum">
+                </div>
+                <br>
+                <div>
+                    <input class="submit" type="button" onclick="store()" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./Js/local.js"></script>
+</body>
+</html>
