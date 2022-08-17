@@ -5,23 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Details</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="container">
+        <h1 class="header">Details</h1>
+        <div class="check_form">
+            <div class="checkele">
+                <label for="email">Email id:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="checkele">
+                <input class="check" type="button" onclick="retrieve()" value="Check">
+            </div>
+        </div>
         <div class="result">
-            <div class="firstname"></div>
-            <div class="lastname"></div>
-            <div class="email"></div>
-            <div class="address"></div>
-            <div class="phonenum"></div>
+            <script>document.write(retrieve())</script>
         </div>
     </div>
-    <script>
-        document.getElementById("firstname").innerHTML = localStorage.getItem("firstname");
-        document.getElementById("lastname").innerHTML = localStorage.getItem("lastname");
-        document.getElementById("email").innerHTML = localStorage.getItem("email");
-        document.getElementById("address").innerHTML = localStorage.getItem("address");
-        document.getElementById("phonenum").innerHTML = localStorage.getItem("phonenum");
-    </script>
+    <script src="./Js/local.js"></script>
 </body>
 </html>

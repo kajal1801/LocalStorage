@@ -49,6 +49,7 @@ body{
 }
 
 .formele textarea{
+    resize: none;
     width: 100%;
     height: 50px;
     border: 1px solid #ccc;
@@ -74,3 +75,91 @@ body{
     color: rgb(214, 90, 90);
     transition: ease 0.3s;
 }
+
+/* Details Page */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(135, 250, 250);
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header{
+    font-size: 40px;
+    margin: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.check_form{
+    margin: 5px;
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: rgb(7, 7, 7);
+    background-color: rgb(250, 217, 168);
+}
+
+
+.result::after{
+    margin: 5px;
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: rgb(7, 7, 7);
+    background-color: rgb(250, 217, 168);
+}
+
+.checkele{
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.checkele input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: rgb(7, 7, 7);
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.check{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: rgb(7, 7, 7);
+    background-color: rgb(214, 90, 90);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    transition: ease 0.3s;
+}
+
+.check:hover{
+    background-color: rgb(251, 176, 176);
+    color: rgb(214, 90, 90);
+    transition: ease 0.3s;
+}
+
