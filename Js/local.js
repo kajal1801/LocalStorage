@@ -24,8 +24,9 @@ function store(){
 }
 
 function retrieve(){
+    let email = document.getElementById(email);
     data.forEach(element => {
-        if(localStorage.email === element.email){
+        if(element.email === email){
             document.getElementById("result").innerHTML = element;
         }
     });
