@@ -73,6 +73,7 @@ body{
 .submit:hover{
     background-color: rgb(251, 176, 176);
     color: rgb(214, 90, 90);
+    cursor: pointer;
     transition: ease 0.3s;
 }
 
