@@ -1,33 +1,33 @@
 let data = [];
-function store(){
-    var firstname = document.getElementById("firstname").value;
-    var lastname = document.getElementById("lastname").value;
-    var email = document.getElementById("email").value;
-    var address = document.getElementById("address").value;
-    var phonenum = document.getElementById("phonenum").value;
 
-    localStorage.setItem("firstname",firstname);
-    localStorage.setItem("lastname", lastname);
-    localStorage.setItem("email", email);
-    localStorage.setItem("address",address);
-    localStorage.setItem("phonenum", phonenum);
+const select = (selector) => document.querySelector(selector);
 
-    data.push(
-        {
-            firstname: firstname,
-            lastname: lastname,
-            email: email,
-            address: address,
-            phonenum: phonenum
-        }
-    );
+const firstname = select("#firstname");
+const lastname = select("#lastname");
+const email = select("#email");
+const address = select("#address");
+const phonenum = select("#phonenum");
+
+function store() {
+  const data = {
+    firstname: firstname.value,
+    lastname: lastname.value,
+    email: email.value,
+    address: address.value,
+    phonenum: phonenum.value
+  };
+
+  localStorage.setItem(data.email, JSON.stringify(data));
+
+  window.location.replace("details.html");
 }
 
-function retrieve(){
-    let email = document.getElementById(email);
-    data.forEach(element => {
-        if(element.email === email){
-            document.getElementById("result").innerHTML = element;
-        }
-    });
+function retrieve() {
+  const data = localStorage.getItem(email.value);
+
+  if (data) {
+    select("#result").innerHTML = data;
+  } else {
+    alert("No data found for this email");
+  }
 }

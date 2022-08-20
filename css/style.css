@@ -161,6 +161,22 @@ a, a:hover, a:focus, a:active {
 .check:hover{
     background-color: rgb(251, 176, 176);
     color: rgb(214, 90, 90);
+    cursor: pointer;
     transition: ease 0.3s;
 }
+
+.result{
+    padding: 10px;
+    margin: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgb(250, 217, 168);
+    color: rgb(49, 43, 43);
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 
